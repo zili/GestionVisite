@@ -20,6 +20,11 @@ namespace GestionVisite.model
             this.X = x;
             this.Y = y;
         }
+        public Geometry(string txtX, string txtY)
+        {
+            this.X = double.Parse(txtX);
+            this.Y = double.Parse(txtY);
+        }
 
     }
 }

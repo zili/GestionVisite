@@ -8,7 +8,7 @@ namespace GestionVisite.model
 {
     public class Helper
     {
-        public static  double Distance(Client cli1, Client cli2)
+        public static  double Distance(Personne cli1, Personne cli2)
         {
             return Distance(cli1.Position, cli2.Position);
         }
