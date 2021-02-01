@@ -40,6 +40,7 @@ namespace GestionVisite
             ordre       = new List<Personne>();
             Visiter(Commercial, db.Clients);
             grdVisite.DataSource = ordre.Select(c => new { c.Id, c.Nom, c.Position.X, c.Position.Y }).ToList(); ;
+            distanceLabel.Text = calculateDistanceTraveled().ToString()+" mètre";
         }
 
         private void Visiter(Personne commercial, List<Personne> clients)
@@ -72,6 +73,12 @@ namespace GestionVisite
                 }
             }
             return proche;
+        }
+        private double calculateDistanceTraveled()
+        {
+            return Enumerable.Range(0, (ordre.Count() - 1))
+                .Select((index) => Helper.Distance(ordre[index], ordre[index + 1]))
+                .Aggregate(Helper.Distance(Commercial,ordre[0]), (acc, x) => acc + x);
         }
     }
 }
