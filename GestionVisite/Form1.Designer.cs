@@ -40,6 +40,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnSaisirComm = new System.Windows.Forms.Button();
             this.grdVisite = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.distanceLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grd)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdVisite)).BeginInit();
@@ -48,9 +50,10 @@
             // btnAfficher
             // 
             this.btnAfficher.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAfficher.Location = new System.Drawing.Point(1488, 72);
+            this.btnAfficher.Location = new System.Drawing.Point(744, 37);
+            this.btnAfficher.Margin = new System.Windows.Forms.Padding(2);
             this.btnAfficher.Name = "btnAfficher";
-            this.btnAfficher.Size = new System.Drawing.Size(146, 62);
+            this.btnAfficher.Size = new System.Drawing.Size(73, 32);
             this.btnAfficher.TabIndex = 0;
             this.btnAfficher.Text = "Afficher";
             this.btnAfficher.UseVisualStyleBackColor = false;
@@ -59,66 +62,74 @@
             // grd
             // 
             this.grd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grd.Location = new System.Drawing.Point(736, 72);
+            this.grd.Location = new System.Drawing.Point(368, 37);
+            this.grd.Margin = new System.Windows.Forms.Padding(2);
             this.grd.Name = "grd";
             this.grd.RowHeadersWidth = 82;
             this.grd.RowTemplate.Height = 33;
-            this.grd.Size = new System.Drawing.Size(717, 316);
+            this.grd.Size = new System.Drawing.Size(358, 164);
             this.grd.TabIndex = 1;
             // 
             // IdLabel
             // 
             this.IdLabel.AutoSize = true;
-            this.IdLabel.Location = new System.Drawing.Point(45, 41);
+            this.IdLabel.Location = new System.Drawing.Point(22, 21);
+            this.IdLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.IdLabel.Name = "IdLabel";
-            this.IdLabel.Size = new System.Drawing.Size(29, 25);
+            this.IdLabel.Size = new System.Drawing.Size(16, 13);
             this.IdLabel.TabIndex = 0;
             this.IdLabel.Text = "Id";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 90);
+            this.label1.Location = new System.Drawing.Point(22, 47);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 25);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nom";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 139);
+            this.label2.Location = new System.Drawing.Point(22, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(304, 25);
+            this.label2.Size = new System.Drawing.Size(151, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Position :  X =                      Y=";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(137, 41);
+            this.txtId.Location = new System.Drawing.Point(68, 21);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 31);
+            this.txtId.Size = new System.Drawing.Size(52, 20);
             this.txtId.TabIndex = 1;
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(137, 87);
+            this.txtNom.Location = new System.Drawing.Point(68, 45);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(2);
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(100, 31);
+            this.txtNom.Size = new System.Drawing.Size(52, 20);
             this.txtNom.TabIndex = 1;
             // 
             // txtX
             // 
-            this.txtX.Location = new System.Drawing.Point(203, 133);
+            this.txtX.Location = new System.Drawing.Point(102, 69);
+            this.txtX.Margin = new System.Windows.Forms.Padding(2);
             this.txtX.Name = "txtX";
-            this.txtX.Size = new System.Drawing.Size(100, 31);
+            this.txtX.Size = new System.Drawing.Size(52, 20);
             this.txtX.TabIndex = 1;
             // 
             // txtY
             // 
-            this.txtY.Location = new System.Drawing.Point(355, 133);
+            this.txtY.Location = new System.Drawing.Point(178, 69);
+            this.txtY.Margin = new System.Windows.Forms.Padding(2);
             this.txtY.Name = "txtY";
-            this.txtY.Size = new System.Drawing.Size(100, 31);
+            this.txtY.Size = new System.Drawing.Size(52, 20);
             this.txtY.TabIndex = 1;
             // 
             // groupBox1
@@ -133,18 +144,21 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(51, 72);
+            this.groupBox1.Location = new System.Drawing.Point(26, 37);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(679, 612);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(340, 318);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Commercial :";
             // 
             // btnSaisirComm
             // 
-            this.btnSaisirComm.Location = new System.Drawing.Point(512, 126);
+            this.btnSaisirComm.Location = new System.Drawing.Point(256, 66);
+            this.btnSaisirComm.Margin = new System.Windows.Forms.Padding(2);
             this.btnSaisirComm.Name = "btnSaisirComm";
-            this.btnSaisirComm.Size = new System.Drawing.Size(99, 44);
+            this.btnSaisirComm.Size = new System.Drawing.Size(50, 23);
             this.btnSaisirComm.TabIndex = 2;
             this.btnSaisirComm.Text = "Saisir";
             this.btnSaisirComm.UseVisualStyleBackColor = true;
@@ -153,22 +167,43 @@
             // grdVisite
             // 
             this.grdVisite.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdVisite.Location = new System.Drawing.Point(17, 247);
+            this.grdVisite.Location = new System.Drawing.Point(8, 128);
+            this.grdVisite.Margin = new System.Windows.Forms.Padding(2);
             this.grdVisite.Name = "grdVisite";
             this.grdVisite.RowHeadersWidth = 82;
             this.grdVisite.RowTemplate.Height = 33;
-            this.grdVisite.Size = new System.Drawing.Size(642, 341);
+            this.grdVisite.Size = new System.Drawing.Size(321, 177);
             this.grdVisite.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(410, 262);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Distance parcourue :";
+            // 
+            // distanceLabel
+            // 
+            this.distanceLabel.AutoSize = true;
+            this.distanceLabel.Location = new System.Drawing.Point(522, 262);
+            this.distanceLabel.Name = "distanceLabel";
+            this.distanceLabel.Size = new System.Drawing.Size(0, 13);
+            this.distanceLabel.TabIndex = 5;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1729, 721);
+            this.ClientSize = new System.Drawing.Size(803, 375);
+            this.Controls.Add(this.distanceLabel);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grd);
             this.Controls.Add(this.btnAfficher);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -177,6 +212,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdVisite)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -194,6 +230,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSaisirComm;
         private System.Windows.Forms.DataGridView grdVisite;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label distanceLabel;
     }
 }
 
